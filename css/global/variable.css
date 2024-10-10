@@ -1,0 +1,17 @@
+:root {
+    --basic-black: #080808;
+    --basic-white: #fff;
+    --light-grey: #9C9C9C;
+    --basic-grey: #757575;
+    --dark-grey: #1B1B1B;
+    --dark-green: #3F8E00;
+    --light-green: #62BA1B;
+    --basic-yellow: #FFA217;
+    --basic-blue: #000AFF;
+    --basic-aqua: #2AB090;
+
+    --wrapper-width: 920px;
+
+    --first-family: 'Raleway-extra-bold', sans-serif;
+    --second-family: 'Ibm', sans-serif;
+}

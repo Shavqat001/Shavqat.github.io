@@ -1,0 +1,6 @@
+.contact {}
+
+.contact__wrapper {
+    width: var(--wrapper-width);
+    margin: 0 auto;
+}

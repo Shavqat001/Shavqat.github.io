@@ -1,0 +1,30 @@
+.page {}
+
+.page__body {
+    background-color: var(--basic-black);
+}
+
+.page__body::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+    opacity: 0;
+}
+
+.page__body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.page__body::-webkit-scrollbar-thumb {
+    background: #333333e5;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px #fff;
+    border-radius: 20px;
+}
+
+.page__body::-webkit-scrollbar-thumb:hover {
+    background-color: #4b4b4be5;
+}
+
+.page__body::-webkit-scrollbar-thumb:active {
+    background-color: #757575;
+}

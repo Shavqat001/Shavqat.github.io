@@ -1,0 +1,18 @@
+/* GLOBAL */
+
+@import url('./global/fonts.css');
+@import url('./global/global.css');
+@import url('./global/normalize.css');
+@import url('./global/variable.css');
+
+/* BLOCKS */
+
+@import url('./blocks/about.css');
+@import url('./blocks/contact.css');
+@import url('./blocks/main-footer.css');
+@import url('./blocks/main-header.css');
+@import url('./blocks/page.css');
+@import url('./blocks/skills.css');
+@import url('./blocks/studies.css');
+@import url('./blocks/testimonials.css');
+@import url('./blocks/cube.css');

@@ -1,0 +1,125 @@
+.studies {
+    background-color: var(--basic-white);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.studies__wrapper {
+    width: var(--wrapper-width);
+    margin: 0 auto;
+}
+
+.studies__title {
+    color: var(--basic-black);
+    font-size: 34px;
+    font-family: 'Raleway-extra-bold', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.studies__text {
+    font-size: 14px;
+    color: var(--light-grey);
+    letter-spacing: 0.01em;
+    line-height: 150%;
+    text-align: center;
+    width: 570px;
+    margin: 0 auto;
+    font-family: 'Ibm', sans-serif;
+    margin-bottom: 40px;
+}
+
+/* .studies__list {} */
+
+.studies__item {
+    display: flex;
+    align-items: center;
+}
+
+.studies__text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.studies__category {
+    margin-bottom: 15px;
+    border-radius: 60px;
+    background-color: #FFF6E9;
+    color: var(--basic-yellow);
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 2px;
+    font-family: 'Ibm', sans-serif;
+    font-weight: 900;
+    padding: 0 10px;
+}
+
+.studies__subtitle {
+    color: var(--basic-black);
+    font-size: 24px;
+    font-family: 'Raleway-extra-bold', sans-serif;
+    margin-bottom: 30px;
+}
+
+.studies__about-project {
+    color: var(--light-grey);
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-family: 'Ibm', sans-serif;
+}
+
+.studies__button {
+    padding: 10px 24px;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    color: var(--basic-white);
+    font-family: 'Ibm', sans-serif;
+    background-color: var(--basic-yellow);
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.studies__button span {
+    margin-right: 10px;
+}
+
+.studies__item:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+.studies__item:nth-child(even) .studies__text-block {
+    margin-left: 30px;
+    order: 2;
+}
+
+.studies__item:nth-child(odd) .studies__text-block {
+    margin-right: 30px;
+}
+
+.studies__item:nth-child(even) .studies__image-block {
+    order: 1;
+}
+
+.studies__item:nth-child(even) .studies__text-block .studies__category {
+    color: var(--basic-aqua);
+    background-color: #E0FFF8;
+}
+
+.studies__item:nth-child(even) .studies__text-block .studies__button {
+    background-color: var(--basic-aqua);
+
+}
+
+.studies__image-block {
+    min-width: 445px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px -10px #333;
+}

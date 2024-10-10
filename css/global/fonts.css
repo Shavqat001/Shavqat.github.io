@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Ibm';
+    src: url('../../fonts/ibm.woff');
+}
+
+@font-face {
+    font-family: 'Raleway-light';
+    src: url('../../fonts/raleway-extrabold.woff');
+}
+
+@font-face {
+    font-family: 'Raleway-bold';
+    font-weight: bold;
+    src: url('../../fonts/raleway-bold.woff');
+}
+
+@font-face {
+    font-family: 'Raleway-extra-bold';
+    font-weight: 800;
+    src: url('../../fonts/raleway-extrabold.woff');
+}
