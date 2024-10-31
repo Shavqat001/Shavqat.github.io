@@ -1,0 +1,14 @@
+.main-footer {
+    background-color: var(--dark-grey);
+    padding: 26px 0;
+}
+
+.main-footer__made-by {
+    text-align: center;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--light-grey);
+}

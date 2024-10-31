@@ -17,7 +17,6 @@
 .page__body::-webkit-scrollbar-thumb {
     background: #333333e5;
     border: 1px solid #fff;
-    box-shadow: 0 0 5px #fff;
     border-radius: 20px;
 }
 

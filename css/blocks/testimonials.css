@@ -28,17 +28,19 @@
 }
 
 .testimonials__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px 30px;
 }
 
 .testimonials__item {
-    width: 445px;
+    display: flex;
     border: 1px solid var(--light-grey);
     padding: 30px;
     border-radius: 6px;
     position: relative;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .testimonials__item::before {

@@ -33,8 +33,6 @@
     align-items: center;
 }
 
-/* .main-header__social-item {} */
-
 .main-header__social-item:not(:last-child) {
     margin-right: 25px;
 }
