@@ -34,6 +34,7 @@
 .studies__item {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .studies__text-block {
@@ -65,11 +66,12 @@
 
 .studies__about-project {
     color: var(--light-grey);
-    font-size: 14px;
-    line-height: 150%;
+    font-size: 16px;
+    line-height: 170%;
     letter-spacing: 2px;
     margin-bottom: 30px;
     font-family: 'Ibm', sans-serif;
+    text-align: justify ;
 }
 
 .studies__button {

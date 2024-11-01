@@ -1,7 +1,7 @@
 .main-header {
-    width: 1110px;
+    width: 1200px;
     border-radius: 0 0 20px 20px;
-    padding: 24px 95px;
+    padding: 24px 0;
     margin: 0 auto;
     background-color: var(--dark-grey);
     margin-bottom: 80px;
@@ -11,6 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 1000px;
 }
 
 .main-header__links {
