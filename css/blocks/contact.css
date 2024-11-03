@@ -3,7 +3,7 @@
 }
 
 .contact__wrapper {
-    width: var(--wrapper-width);
+    max-width: var(--wrapper-width);
     margin: 0 auto;
 }
 
@@ -70,4 +70,13 @@
 .contact__button-send span {
     margin-right: 10px;
     font-family: var(--second-family);
+}
+
+@media (max-width: 1000px) {
+    .contact__wrapper {
+        padding: 0 20px;
+    }
+    .contact__text br {
+        display: none;
+    }
 }

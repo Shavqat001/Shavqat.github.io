@@ -5,7 +5,7 @@
 }
 
 .studies__wrapper {
-    width: var(--wrapper-width);
+    max-width: var(--wrapper-width);
     margin: 0 auto;
 }
 
@@ -23,17 +23,16 @@
     letter-spacing: 0.01em;
     line-height: 150%;
     text-align: center;
-    width: 570px;
     margin: 0 auto;
     font-family: 'Ibm', sans-serif;
     margin-bottom: 40px;
 }
 
-/* .studies__list {} */
-
 .studies__item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -42,6 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    max-width: 450px;
 }
 
 .studies__category {
@@ -71,7 +71,7 @@
     letter-spacing: 2px;
     margin-bottom: 30px;
     font-family: 'Ibm', sans-serif;
-    text-align: justify ;
+    text-align: justify;
 }
 
 .studies__button {
@@ -97,13 +97,10 @@
 }
 
 .studies__item:nth-child(even) .studies__text-block {
-    margin-left: 30px;
     order: 2;
 }
 
-.studies__item:nth-child(odd) .studies__text-block {
-    margin-right: 30px;
-}
+.studies__item:nth-child(odd) .studies__text-block {}
 
 .studies__item:nth-child(even) .studies__image-block {
     order: 1;
@@ -120,8 +117,34 @@
 }
 
 .studies__image-block {
-    min-width: 445px;
+    max-width: 445px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 20px -10px #333;
+}
+
+@media (max-width: 1000px) {
+    .studies__list {
+        padding: 0 20px;
+    }
+
+    .studies__image-block,
+    .studies__text-block {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 970px) {
+    .studies__item {
+        justify-content: center;
+    }
+
+    .studies__item:nth-child(even) .studies__image-block {
+        order: initial;
+    }
+
+    .studies__item:nth-child(even) .studies__text-block {
+        order: initial;
+    }
 }

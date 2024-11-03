@@ -3,17 +3,18 @@
 }
 
 .about__wrapper {
-    width: var(--wrapper-width);
+    max-width: var(--wrapper-width);
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 70px;
 }
 
 .about__text-block {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    margin-right: 78px;
 }
 
 .about__user-name {
@@ -51,8 +52,37 @@
 }
 
 .about__image-block {
-    min-width: 350px;
+    max-width: 350px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: -7px -7px 20px -10px #fff;
+    display: inline-flex;
+}
+
+.about__image-block img {
+    height: auto;
+}
+
+@media (max-width: 970px) {
+    .about__wrapper {
+        padding: 0 20px;
+    }
+    .about__text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        >* {
+            margin: 0;
+        }
+    }
+
+    .about__text br {
+        display: none;
+    }
+
+    .about__start-button {
+        width: 300px;
+    }
 }

@@ -27,3 +27,8 @@
 .page__body::-webkit-scrollbar-thumb:active {
     background-color: #757575;
 }
+
+.wrapper {
+    width: var(--wrapper-width);
+    margin: 0 auto;
+}

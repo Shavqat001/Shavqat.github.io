@@ -115,3 +115,9 @@
         bottom: 600px;
     }
 }
+
+@media (max-width: 1290px) {
+    .cube-1, .cube-2 {
+        display: none;
+    }
+}

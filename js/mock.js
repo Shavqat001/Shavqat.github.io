@@ -24,3 +24,70 @@ const testimonials = [
     },
 ];
 
+let projects = [
+    {
+        category: 'AI/ML',
+        title: 'Universal Messenger',
+        about: `Universal Messenger — это чат-приложение, разработанное для удобного общения междупользователями через популярными мессенджерами Телеграм и Ватсап. Он настроен черезтелеграм-бота и реального номера из ватсап. Пользователь написавщий сообщение ботупоявляется в веб-интерфейсе. Проект включает в себя веб-сокет, експресс и базу данныхгде сообщения сохраняются.`,
+        picture: './img/multi-talk.png',
+    },
+    {
+        category: 'Productivity',
+        title: 'To-Do List',
+        about: `Этот To-Do List позволяет пользователям добавлять, удалять и отмечать задачи каквыполненные. Список поддерживает localStorage, благодаря чему задачи сохраняются дажепосле перезагрузки страницы. У каждой задачи есть иконки для отметки выполнения(галочка) и удаления (крестик). При необходимости, задачи можно редактировать. Такжепредусмотрена возможность добавления описания задачи, которое отображается принаведении.`,
+        picture: './img/to-do-list.jpg',
+    },
+    {
+        category: 'E-Commerce',
+        title: 'Tekhnomart',
+        about: `Техномарт — это интернет-магазин строительных материалов и инструментов для ремонта,разработанный с использованием современных веб-технологий и принципов. Сайт отличаетсяудобной навигацией, привлекательным дизайном и высокой функциональностью, что делает егоидеальным решением для клиентов, ищущих качественные товары для строительства и ремонта.`,
+        picture: './img/tech.png',
+    },
+]
+
+let testimonialList = document.querySelector('.testimonials__list');
+
+testimonials.forEach(testimonial => {
+    testimonialList.innerHTML += `
+    <li class="testimonials__item">
+        <p class="testimonials__subtext">
+            ${testimonial.text}
+        </p>
+
+        <div class="testimonials__client">
+            <img src="${testimonial.picture}" alt="${testimonial.username}">
+            <h3 class="testimonials__client-name">
+                ${testimonial.username}
+            </h3>
+        </div>
+    </li>`;
+});
+
+let projectList = document.querySelector('.studies__list');
+
+projects.forEach(project => {
+    projectList.innerHTML += `
+        <li class="studies__item">
+            <div class="studies__text-block">
+                <span class="studies__category">
+                    ${project.category}
+                </span>
+                <h3 class="studies__subtitle">
+                    ${project.title}
+                </h3>
+                <p class="studies__about-project">
+                    ${project.about}
+                </p>
+                <button class="studies__button">
+                    <span>View case study</span>
+                    <svg width="6" height="10">
+                        <use xlink:href="#right-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="studies__image-block">
+                <img src="${project.picture}" alt="${project.title}">
+            </div>
+        </li>`
+})

@@ -5,7 +5,7 @@
 }
 
 .skills__wrapper {
-    width: var(--wrapper-width);
+    max-width: var(--wrapper-width);
     margin: 0 auto;
 }
 
