@@ -1,10 +1,23 @@
-document.querySelectorAll('.main-header__link a').forEach(link => {
+// Получаем все ссылки в навигации
+let links = document.querySelectorAll('.main-header__link a');
+links.forEach(link => {
     link.addEventListener('click', function (event) {
         event.preventDefault();
         const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
+
+        if (targetId === '#home' || targetId === '') {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
     });
 });
 
