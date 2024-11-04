@@ -15,8 +15,10 @@ window.addEventListener('scroll', () => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
+        document.querySelector('.main-header--fixed').style.opacity = '1';
         i += 5;
     } else {
+        document.querySelector('.main-header--fixed').style.opacity = '0';
         i -= 5;
     }
 
