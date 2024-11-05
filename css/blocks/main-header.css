@@ -41,7 +41,9 @@
 }
 
 @media (max-width: 620px) {
-
+.main-header--fixed {
+    display: none;
+}
     .main-header__links,
     .main-header__navigation {
         flex-direction: column;
