@@ -1,10 +1,14 @@
-// Получаем все ссылки в навигации
-let links = document.querySelectorAll('.main-header__link a');
-links.forEach(link => {
-    link.addEventListener('click', function (event) {
-        event.preventDefault();
-        const targetId = this.getAttribute('href');
+let listItems = document.querySelectorAll('.main-header__link');
 
+listItems.forEach(item => {
+    item.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Get the <a> tag inside the clicked <li> and retrieve its href
+        const link = this.querySelector('a');
+        const targetId = link ? link.getAttribute('href') : '';
+
+        // Check if it's the home section or an empty hash
         if (targetId === '#home' || targetId === '') {
             window.scrollTo({
                 top: 0,
